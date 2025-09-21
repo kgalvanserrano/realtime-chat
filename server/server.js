@@ -8,7 +8,7 @@ const httpServer = createServer(app); // create http server
 // allow socket connections from frontend origin in dev
 const io = new Server(httpServer, { // socket.io server
   cors: { // CORS settings
-    origin: 'http://localhost:3000', // React dev server
+    origin: 'http://localhost:5173', // React dev server
     methods: ['GET', 'POST'] // allowed methods
   }
 });
